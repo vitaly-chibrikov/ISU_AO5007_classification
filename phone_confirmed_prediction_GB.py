@@ -17,7 +17,7 @@ main_components=len(X_train.columns)
 
 ################ Prepare the model #########
 clf = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, 
-                                 max_depth=5, random_state=0)
+                                 max_depth=10, random_state=0)
 
 ################ Fit and predict ###########
 clf.fit(X_train, Y_train)
